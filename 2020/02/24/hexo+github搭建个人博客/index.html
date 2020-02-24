@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="baidu-site-verification" content="093lY4ziMu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Maybe it&#39;s like this, I&#39;ll still on the way !">
+    <meta name="keyword"  content="k, hexo-theme-snail">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+    <title>
+        
+          hexo+github搭建个人博客 - クリスのノート
+        
+    </title>
+
+    <link rel="canonical" href="https://kris-kk.gitee.io/2020/02/24/hexo+github搭建个人博客/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS --> 
+    
+        
+<link rel="stylesheet" href="/css/dusign-light.css">
+
+        
+<link rel="stylesheet" href="/css/dusign-common-light.css">
+
+        
+<link rel="stylesheet" href="/css/font-awesome.css">
+
+        
+<link rel="stylesheet" href="/css/toc.css">
+
+        <!-- background effects end -->
+    
+    
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+    
+<link rel="stylesheet" href="/css/widget.css">
+
+
+    
+<link rel="stylesheet" href="/css/rocket.css">
+
+
+    
+<link rel="stylesheet" href="/css/signature.css">
+
+
+    
+<link rel="stylesheet" href="/css/fonts.googleapis.css">
+
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- photography -->
+    
+<link rel="stylesheet" href="/css/photography.css">
+
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- background effects start -->
+    
+    <!-- background effects end -->
+
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('')
+                /*post*/
+            
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/dusign.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>hexo+github搭建个人博客</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Kris on
+                            2020-02-24
+                        </span>
+
+                        
+                            <div class="blank_box"></div>
+                            <span class="meta">
+                                Words <span class="post-count">2.4k</span> and
+                                Reading Time <span class="post-count">8</span> Minutes
+                            </span>
+                            <div class="blank_box"></div>
+                            <!-- 不蒜子统计 start -->
+                            <span class="meta">
+                                Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+                            </span>
+                            <!-- 不蒜子统计 end -->
+                        
+
+                    </div>
+                
+
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    
+    <div class="waveWrapper">
+        <div class="wave wave_before" style="background-image: url('/img/wave-light.png')"></div>
+        <div class="wave wave_after" style="background-image: url('/img/wave-light.png')"></div>
+    </div>
+    
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Hi Kris</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/categories/">Categories</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/photography/">Photography</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                    
+                    <li>
+                        <a href="https://www.cnblogs.com/louis6575/" target="_blank">Chinese Blog</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1 id="Git-Bash-Hexo-Gitee搭建个人博客"><a href="#Git-Bash-Hexo-Gitee搭建个人博客" class="headerlink" title="Git Bash+Hexo+Gitee搭建个人博客"></a>Git Bash+Hexo+Gitee搭建个人博客</h1><blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>个人标签：</strong></p>
+<p><code>大四学生</code> <code>曾用名：Louis</code> <code>现用名：Kris</code>  <code>Spring</code> <code>SpringMVC</code> <code>MyBatis</code> <code>smm -ing</code> <code>Spring Boot -ing</code> <code>开始写博客</code> <code>乐于分享</code> </p>
+<p><strong>熟知工具：</strong></p>
+<p>for C/C++：VC++ 6.0</p>
+<p>for Java：Eclipse、MyEclipse、IntelliJ IDEA 2019.2.4</p>
+<p>for SQL：MySQL 8.0.17、SQLServer2012、Sqlite、Navicat Premium 12、Navicat Data Modeler</p>
+<p>for Python：JetBrains PyCharm 2019.1.2、Jupyter Notebook、Anaconda、sklearn机器学习、了解TensorFlow</p>
+<p>for Others：Adobe Photoshop CC 2018 还行、Au小白（偶尔娱乐一下hhh）</p>
+<p>我还有好多想要学习的工具，期待与你相遇哦，欢迎和我交流！</p>
+<p><strong>技术交流：</strong></p>
+<p>部分项目已经分享至： <a href="">Github</a> <a href="https://gitee.com/kris-kk">Gitee</a> </p>
+<p>CSDN</p>
+<p>个性化的<a href="https://www.cnblogs.com/louis6575/" target="_blank" rel="noopener">博客园</a>： 刚装饰的，部分CSS颜色样式还没调完，到时候可以保存很多个CSS样式模板hhh，emm 原谅我，美化教程还未出。如果友友想要自己尝试的话，可以先参考<a href="https://www.cnblogs.com/zouwangblog/p/11541835.html" target="_blank" rel="noopener">这篇文章</a>，我根据他的方式，做了一些调整，比如，把加载博客主页或文章主页的图片及main.js存放到了Gitee，应为这个有Web IDE，相较于Github，修改起来特别方便，另外导航栏之类的还未添加，因为是昨天下午刚做，今天又要搭建这个，时间比较仓促hhh，这两天把这些搞好，就可以继续学习SMM以及SpringBoot了，到时候记录自己的学习过程及调试记录，加油！敬请期待吧！</p>
+<p>还可以加Q进行交流哦：1207070896 或者<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=cBwKG0FCQEdAR0BHSElGMBYfCB0RGRxeEx8d" target="_blank" rel="noopener">给我写信</a></p>
+<p><strong>前期准备：</strong> <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a>、<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a> 具体安装过程很简单，可参考 <a href="https://blog.csdn.net/qq_36759224/article/details/82121420?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">这篇文章</a></p>
+<p><strong>温馨提示：</strong>您可以先从目录点击目录查看<a href="#q1">【问题一】</a>  <a href="#q2">【问题二】</a>，不希望你和我一样掉坑里啊^o^</p>
+</blockquote>
+<p>[TOC]</p>
+<h2 id="一、创建本地仓库"><a href="#一、创建本地仓库" class="headerlink" title="一、创建本地仓库"></a>一、创建本地仓库</h2><p>前期检查：如果不记得是否已安装，进行如下操作进行检测</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git --version  </span><br><span class="line">$ node -v  </span><br><span class="line">$ npm -v</span><br></pre></td></tr></table></figure>
+<h4 id="1-创建kris-blog文件夹"><a href="#1-创建kris-blog文件夹" class="headerlink" title="1. 创建kris_blog文件夹"></a>1. 创建kris_blog文件夹</h4><p>在此文件夹下进行Git bash，执行以下命令：</p>
+<figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h4 id="2-创建Hexo文件夹"><a href="#2-创建Hexo文件夹" class="headerlink" title="2. 创建Hexo文件夹"></a>2. 创建Hexo文件夹</h4><p>在kris_blog下创建一个Hexo文件夹，进入Hexo文件夹，Git bash，执行以下命令</p>
+<figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>执行结果如下：</p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\init_success.jpg" alt=""></p>
+<p>至此，Hexo已经初始化了，接下来进行测试</p>
+<h2 id="二、查看localhost"><a href="#二、查看localhost" class="headerlink" title="二、查看localhost"></a>二、查看localhost</h2><h4 id="1-启用本地服务器"><a href="#1-启用本地服务器" class="headerlink" title="1. 启用本地服务器"></a>1. 启用本地服务器</h4><figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\generate.jpg" alt=""></p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\run_in_localhost.jpg" alt=""></p>
+<h4 id="2-查看Hexo默认页面"><a href="#2-查看Hexo默认页面" class="headerlink" title="2. 查看Hexo默认页面"></a>2. 查看Hexo默认页面</h4><p>浏览器地址栏输入<a href="http://localhost:4000/，访问初始化页面，如下所示：" target="_blank" rel="noopener">http://localhost:4000/，访问初始化页面，如下所示：</a></p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\port_4000.jpg" alt=""></p>
+<h2 id="三、将博客部署到码云Gitee"><a href="#三、将博客部署到码云Gitee" class="headerlink" title="三、将博客部署到码云Gitee"></a>三、将博客部署到码云Gitee</h2><p><a href="https://gitee.com/kris-kk" target="_blank" rel="noopener">点击此处</a>查看我的Gitee部署</p>
+<h4 id="1-注册-并-登录-到gitee"><a href="#1-注册-并-登录-到gitee" class="headerlink" title="1. 注册 并 登录 到gitee "></a><span id="step3.1">1. <a href="https://gitee.com/signup" target="_blank" rel="noopener">注册</a> 并 <a href="https://gitee.com/login" target="_blank" rel="noopener">登录</a> 到<a href="https://gitee.com" target="_blank" rel="noopener">gitee</a> </span></h4><h4 id="2-创建个人仓库"><a href="#2-创建个人仓库" class="headerlink" title="2. 创建个人仓库"></a><span id="step3.2">2. 创建个人仓库</span></h4><p><img src=".\2020-02-24-hexo+github搭建个人博客\create_pro.jpg" alt=""></p>
+<h4 id="3-配置SSH密钥（同github一样）"><a href="#3-配置SSH密钥（同github一样）" class="headerlink" title="3. 配置SSH密钥（同github一样）"></a>3. 配置SSH密钥（同github一样）</h4><p>注意：要到kris_blog文件夹下执行以下命令：<br><figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; Ctrl+C 关闭本地服务器，然后回到父级目录kris_blog再生成新的ssh</span><br><span class="line">$ cd .. </span><br><span class="line">$ ssh-keygen -t rsa -C louis6575@aliyun.com</span><br><span class="line">&#x2F;&#x2F; 填写你的邮箱地址，别搞我的昂，哈哈哈</span><br></pre></td></tr></table></figure><br>不用设置密码，一直回车就行，我的之前用的是github的ssh，现在进行重写。</p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\generate_ssh.jpg" alt=""></p>
+<h4 id="4-拷贝ssh"><a href="#4-拷贝ssh" class="headerlink" title="4. 拷贝ssh"></a>4. 拷贝ssh</h4><p>看到上图，表示已经生成了ssh文件了，拷贝一下吧！</p>
+<figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ clip &lt; ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+<h4 id="5-配置Gitee公钥"><a href="#5-配置Gitee公钥" class="headerlink" title="5. 配置Gitee公钥"></a>5. 配置Gitee公钥</h4><p>登录自己的gitee，进行以下操作：</p>
+<p>打开设置 — 点击SSH公钥 — 输入信息 — 确定 — gitee密码验证 — 公钥配置成功</p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\open_setting.jpg" alt=""></p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\gitee_ssh.jpg" alt=""></p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\ssh_success.png" alt=""></p>
+<h4 id="6-git测试"><a href="#6-git测试" class="headerlink" title="6. git测试"></a>6. git测试</h4><figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@gitee.com</span><br></pre></td></tr></table></figure>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\git_error.jpg" alt=""></p>
+<p>如果之前没有用过gitee进行公钥配置的话，会报这种错误，故需要在hosts文件(<code>C:\windows\system32\drivers\etc</code>)末尾中添加：<code>212.64.62.174    gitee.com</code>，保存文件并重新git测试，测试通过！</p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\git_success.jpg" alt=""></p>
+<h4 id="7-配置个人信息"><a href="#7-配置个人信息" class="headerlink" title="7. 配置个人信息"></a>7. 配置个人信息</h4><p>我们每次的Commit，Git 会根据我们的git名字<code>kris-kk</code>和邮箱<code>louis6575@aliyun.com</code>来记录提交，Gitee 会使用这些用户信息进行权限管理，输入以下命令进行个人信息的设置，把名称和邮箱替换成你自己的，名字可以不是 Gitee 的昵称，但为了方便记忆，建议与 Gitee 一致哦！</p>
+<figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name kris-kk</span><br><span class="line">$ git config --global user.email louis6575@aliyun.com</span><br></pre></td></tr></table></figure>
+<p>All Right ! 至此，我们就很顺畅地配置好了SSH公钥了，本机已经成功连接到了自己的Gitee</p>
+<h2 id="四、将本地的Hexo文件提交到自己的Gitee仓库"><a href="#四、将本地的Hexo文件提交到自己的Gitee仓库" class="headerlink" title="四、将本地的Hexo文件提交到自己的Gitee仓库"></a><a name="step4">四、将本地的Hexo文件提交到自己的Gitee仓库</a></h2><h4 id="1-打开仓库，复制ssh链接"><a href="#1-打开仓库，复制ssh链接" class="headerlink" title="1. 打开仓库，复制ssh链接"></a>1. 打开仓库，复制ssh链接</h4><p><img src=".\2020-02-24-hexo+github搭建个人博客\copy_ssh.jpg" alt=""></p>
+<h4 id="2-更改配置信息"><a href="#2-更改配置信息" class="headerlink" title="2. 更改配置信息"></a>2. 更改配置信息</h4><p>打开本地目录中的配置文件 \kris_blog\Hexo_config.yml</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@gitee.com:kris-kk/kris-kk.gitee.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-配置文件修改好后，cd-Hexo调整当前目录为Hexo，执行以下指令："><a href="#3-配置文件修改好后，cd-Hexo调整当前目录为Hexo，执行以下指令：" class="headerlink" title="3. 配置文件修改好后，cd Hexo调整当前目录为Hexo，执行以下指令："></a>3. 配置文件修改好后，<code>cd Hexo</code>调整当前目录为Hexo，执行以下指令：</h4><figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\hexo_g_d.jpg" alt=""></p>
+<p>以上信息，说明配置已经OK了，但也有报以下错误的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure>
+<p>上面配置文件中type属性，’git‘要有单引号，我刚开始没加的时候，每次执行<code>hexo g -d</code>，配置文件就会被重置，需要重新配置。这个单引号差点气哭啊，忙活半天，结果404！！！还好我检查了下配置文件，把单引号加了上去！！！</p>
+<p>原始此处的缺省配置是这样的，所以要注重每一个细节啊！！！</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">''</span></span><br></pre></td></tr></table></figure>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\404.jpg" alt=""></p>
+<p>具体什么错误，可自行参阅相关文档排除，一般按照此流程走下来，除了修改hosts文件，不会报错，除非个人手误，配置文件搞错。</p>
+<h4 id="4-Nice-文件commit成功-！"><a href="#4-Nice-文件commit成功-！" class="headerlink" title="4. Nice ! 文件commit成功 ！"></a>4. Nice ! 文件commit成功 ！</h4><p><img src=".\2020-02-24-hexo+github搭建个人博客\commit_files.jpg" alt=""></p>
+<h4 id="5-查看Gitee仓库"><a href="#5-查看Gitee仓库" class="headerlink" title="5. 查看Gitee仓库"></a>5. 查看Gitee仓库</h4><p>好棒呀，虽然已经凌晨两点咯，边配置变写说明文档，有点儿耗时，但希望结果是好的，真棒！</p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\commit_success.jpg" alt=""></p>
+<h4 id="6-开启Gitee-pages服务，重点！！！"><a href="#6-开启Gitee-pages服务，重点！！！" class="headerlink" title="6. 开启Gitee pages服务，重点！！！"></a>6. 开启Gitee pages服务，重点！！！</h4><p>打开自己的<a href="https://gitee.com/kris-kk/kris-kk.gitee.io" target="_blank" rel="noopener">仓库</a> — 点击“服务” — 开启Gitee pages服务</p>
+<ul>
+<li>什么是Gitee服务？详情参考<a href="https://gitee.com/help/articles/4136" target="_blank" rel="noopener">使用帮助</a></li>
+</ul>
+<ul>
+<li><p>码云 Pages 是一个免费的静态网页托管服务，您可以使用 码云 Pages 托管博客、项目官网等静态网页。如果您使用过 Github Pages 那么您会很快上手使用码云的 Pages服务。目前码云 Pages 支持 Jekyll、Hugo、Hexo编译静态资源。</p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\service.jpg" alt=""></p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\gitee pages服务.jpg" alt=""></p>
+</li>
+</ul>
+<h4 id="7-访问博客主页"><a href="#7-访问博客主页" class="headerlink" title="7. 访问博客主页"></a>7. 访问博客主页</h4><p>提示：已开启 Gitee Pages 服务，网站地址： <a href="http://kris-kk.gitee.io/kris-kk.gitee.io">http://kris-kk.gitee.io/kris-kk.gitee.io</a><br>打开该网址可进行查看</p>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\init_index.jpg" alt=""></p>
+<p><strong>到目前为止，可以确定本地仓库的博客系统已经成功部署到了Gitee，但有几个问题值得思考</strong>：</p>
+<h5 id="【问题一】每次访问都要输入二级目录？"><a href="#【问题一】每次访问都要输入二级目录？" class="headerlink" title="+ 【问题一】每次访问都要输入二级目录？"></a><a name="q1">+ 【问题一】每次访问都要输入二级目录？</a></h5><p>  【<a href="https://gitee.com/help/articles/4136#article-header0" target="_blank" rel="noopener">Gitee使用帮助</a>】如果你想你的 pages 首页访问地址不带二级目录，如ipvb.gitee.io，你需要建立一个与自己个性地址同名的仓库，如 <a href="https://gitee.com/ipvb" target="_blank" rel="noopener">https://gitee.com/ipvb</a> 这个用户，想要创建一个自己的站点，但不想以子目录的方式访问，想以ipvb.gitee.io直接访问，那么他就可以创建一个名字为ipvb的仓库 <a href="https://gitee.com/ipvb/ipvb" target="_blank" rel="noopener">https://gitee.com/ipvb/ipvb</a> 部署完成后，就可以以 <a href="https://ipvb.gitee.io" target="_blank" rel="noopener">https://ipvb.gitee.io</a> 进行访问了。<br>  【简说】就是我们需要建立一个和<strong>自己用户名</strong>一样的仓库，那好吧，重新建一个仓库<a href="https://gitee.com/kris-kk/kris-kk" target="_blank" rel="noopener">kris-kk</a></p>
+<p>  <img src=".\2020-02-24-hexo+github搭建个人博客\new_repostory.jpg" alt=""></p>
+<p>  【跳转步骤：】跳转到 <a href="#step4">四、将本地的Hexo文件提交到自己的Gitee仓库</a> ，创建一个新的仓库<a href="https://gitee.com/kris-kk/kris-kk" target="_blank" rel="noopener">kris-kk</a>，进行同样的操作，终于搞定！</p>
+<p>  <img src=".\2020-02-24-hexo+github搭建个人博客\new_gitee_pages.jpg" alt=""></p>
+<p>  <img src=".\2020-02-24-hexo+github搭建个人博客\部署成功.jpg" alt=""></p>
+<h5 id="【问题二】这界面也太low了吧？-gt"><a href="#【问题二】这界面也太low了吧？-gt" class="headerlink" title="+ 【问题二】这界面也太low了吧？&gt;"></a><span id="q2">+ 【问题二】这界面也太low了吧？</span>&gt;</h5><p>没错，这是Hexo默认的版式，可以选用别人的模板进行装饰，然后再根据自己需求调整CSS样式，主题美化教程会一周内上新哦！敬请期待吧！</p>
+<h2 id="五、在博客上发表文章测试"><a href="#五、在博客上发表文章测试" class="headerlink" title="五、在博客上发表文章测试"></a>五、在博客上发表文章测试</h2><h4 id="1-按照以下指令，创建一篇新文章，文章标题为article-test"><a href="#1-按照以下指令，创建一篇新文章，文章标题为article-test" class="headerlink" title="1. 按照以下指令，创建一篇新文章，文章标题为article_test"></a>1. 按照以下指令，创建一篇新文章，文章标题为<code>article_test</code></h4><figure class="highlight plain"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n article_test</span><br></pre></td></tr></table></figure>
+<p><img src=".\2020-02-24-hexo+github搭建个人博客\article_test.jpg" alt=""></p>
+<p>也可以直接在 \Hexo\source_posts 目录下右键鼠标新建文本文档，改后缀为 .md 即可，这种方法比较方便，或者直接使用Typora工具来写，注意书写格式！</p>
+<p>文章标题，标签，分类，封面图片，摘要等，可以在 Front-matter 里面配置（Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量，官方文档：<a href="https://hexo.io/zh-cn/docs/front-matter" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/front-matter</a> ），举个例子：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>layout</td>
+<td>布局</td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>标题</td>
+<td>文章的文件名</td>
+</tr>
+<tr>
+<td>date</td>
+<td>建立日期</td>
+<td>文件建立日期</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>更新日期</td>
+<td>文件更新日期</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>开启文章的评论功能</td>
+<td>true</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>标签（不适用于分页）</td>
+<td></td>
+</tr>
+<tr>
+<td>categories</td>
+<td>分类（不适用于分页）</td>
+<td></td>
+</tr>
+<tr>
+<td>permalink</td>
+<td>覆盖文章网址</td>
+<td></td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>当我们用编辑器写好文章后，可以commit一下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<p>然后就可以打开<a href="https://kris-kk.gitee.io/">首页</a>查看添加的article_test文章了呀</p>
+<h2 id="六、自定义域名（可选）"><a href="#六、自定义域名（可选）" class="headerlink" title="六、自定义域名（可选）"></a>六、自定义域名（可选）</h2><blockquote>
+<p>说明：当然，博客部署完毕，还有很多事情可做，比如主题美化，包括微调CSS、添加滚动特效、背景特效、导航栏美化等。我们先进行一个自定义域名的解析，（之前1元/年买的阿里云域名 <a href="http://kriskk.club/" target="_blank" rel="noopener">http://kriskk.club/</a> 也快到期了，之前用Jekyll搭建过一次个人博客系统，但一直没有维护，后来废掉了hhh），这样我们就有多种访问自己博客首页的方式了，工作了，租用一个相对稳定的域名。</p>
+</blockquote>
+<p>emm 域名半年没有使用了 备案信息没了，需要重新备案！先到这吧，持续更新！</p>
+<p>接下来更新博客主题，以及新注册一个域名替换！加油！</p>
+
+                
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/11/01/Hexo-Theme-Snail/" data-toggle="tooltip" data-placement="top" title="Hexo-Theme-Snail">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                <!-- tip start -->
+                
+
+                
+                <div class="comment_notes">
+                    <p>
+                        This is copyright.
+                    </p>
+                </div>
+                
+                <!-- tip end -->
+
+                <!-- Music start-->
+                
+                
+
+<link rel="stylesheet" href="/css/music-player/fonts/iconfont.css">
+
+
+<link rel="stylesheet" href="/css/music-player/css/reset.css">
+
+
+<link rel="stylesheet" href="/css/music-player/css/player.css">
+
+
+
+<div class="music-player">
+    <audio class="music-player__audio" ></audio>
+    <div class="music-player__main">
+        <div class="music-player__blur"></div>
+        <div class="music-player__disc">
+            <div class="music-player__image">
+                <img width="100%" src="" alt="">
+            </div>
+            <div class="music-player__pointer"><img width="100%" src="/img/cd_tou.png" alt=""></div>
+        </div>
+        <div class="music-player__controls">
+            <div class="music__info">
+                <h3 class="music__info--title">...</h3>
+                <p class="music__info--singer">...</p>
+            </div>
+            <div class="player-control">
+                <div class="player-control__content">
+                    <div class="player-control__btns">
+                        <div class="player-control__btn player-control__btn--prev"><i class="iconfont icon-prev"></i></div>
+                        <div class="player-control__btn player-control__btn--play"><i class="iconfont icon-play"></i></div>
+                        <div class="player-control__btn player-control__btn--next"><i class="iconfont icon-next"></i></div>
+                        <div class="player-control__btn player-control__btn--mode"><i class="iconfont icon-loop"></i></div>
+                    </div>
+                    <div class="player-control__volume">
+                        <div class="control__volume--icon player-control__btn"><i class="iconfont icon-volume"></i></div>
+                        <div class="control__volume--progress player_progress"></div>
+                    </div>
+                </div>
+                <div class="player-control__content">
+                    <div class="player__song--progress player_progress"></div>
+                    <div class="player__song--timeProgess nowTime">00:00</div>
+                    <div class="player__song--timeProgess totalTime">00:00</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/music-player/utill.js"></script>
+
+
+<script src="/js/music-player/jquery.min.js"></script>
+
+
+<script src="/js/music-player/player.js"></script>
+
+
+                
+                <!-- Music end -->
+
+                <!-- Sharing -->
+                
+                <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                <!--  css & js -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!-- Sharing -->
+
+                <!-- gitment start -->
+                
+                <!-- gitment end -->
+
+                <!-- 来必力City版安装代码 -->
+                
+                <!-- City版安装代码已完成 -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://www.cnblogs.com/louis6575" target="_blank">Kris&#39;s Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Dusign&#39;s Web</a></li>
+                    
+                        <li><a href="https://github.com/louis6575" target="_blank">Dusign&#39;s Github</a></li>
+                    
+                        <li><a href="#" target="_blank">Other</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+
+
+<style  type="text/css">
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/kris-kk">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Kris 2020 
+                    <br>
+                    Powered by 
+                    <a href="https://github.com/dusign/hexo-theme-snail" target="_blank" rel="noopener">
+                        <i>hexo-theme-snail</i>
+                    </a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0"
+                        width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=dusign&repo=hexo-theme-snail&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- Search -->
+
+<script src="/js/search.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://kris-kk.gitee.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'kris-kk.gitee.io';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Search -->
+
+    <script type="text/javascript">      
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+    var path = "/" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+    </script>
+
+
+<!-- busuanzi -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+
+    
+        <!-- background effects line -->
+        
+
+        
+            <script type="text/javascript" src="/js/mouse-click.js" content='[&quot;🌱&quot;,&quot;just do it&quot;,&quot;🍀&quot;]' color='[&quot;rgb(121,93,179)&quot; ,&quot;rgb(76,180,231)&quot; ,&quot;rgb(184,90,154)&quot;]'></script>
+        
+
+        <!-- background effects end -->
+    
+
+    <!--<script size="50" alpha='0.3' zIndex="-999" src="/js/ribbonStatic.js"></script>-->
+    
+        <script src="/js/ribbonDynamic.js"></script>
+    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
